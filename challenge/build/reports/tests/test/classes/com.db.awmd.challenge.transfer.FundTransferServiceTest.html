@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.db.awmd.challenge.transfer.FundTransferServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.db.awmd.challenge.transfer.FundTransferServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.db.awmd.challenge.transfer.html">com.db.awmd.challenge.transfer</a> &gt; FundTransferServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.372s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">transferFunds</td>
+<td>0.335s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transferFundsWhenAccountDoesnotExist</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transferFundsWithLowBalance</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transferFundsWithNegitiveAmount</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">transferFundsWithNullAccountIds</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2019-11-11 07:56:04.104  INFO 11148 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.db.awmd.challenge.transfer.FundTransferServiceTest], using SpringBootContextLoader
+2019-11-11 07:56:04.107  INFO 11148 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.db.awmd.challenge.transfer.FundTransferServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-11-11 07:56:04.108  INFO 11148 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.db.awmd.challenge.transfer.FundTransferServiceTest]: FundTransferServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-11-11 07:56:04.117  INFO 11148 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.db.awmd.challenge.DevChallengeApplication for test class com.db.awmd.challenge.transfer.FundTransferServiceTest
+2019-11-11 07:56:04.123  INFO 11148 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-11-11 07:56:04.127  INFO 11148 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2019-11-11 07:56:04.129  INFO 11148 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2019-11-11 07:56:04.129  INFO 11148 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@61869d5a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@63f99f31, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@83a80e4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@62d63f34, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@376f1279, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@18c013b2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@44a18dee, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@175d35d1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@586e0199, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@402bd4a5]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.4.RELEASE)
+
+2019-11-11 07:56:04.311  INFO 11148 --- [    Test worker] c.d.a.c.t.FundTransferServiceTest        : Starting FundTransferServiceTest on DESKTOP-SS07334 with PID 11148 (started by jaga in C:\Users\jaga\Downloads\challenge)
+2019-11-11 07:56:04.312  INFO 11148 --- [    Test worker] c.d.a.c.t.FundTransferServiceTest        : No active profile set, falling back to default profiles: default
+2019-11-11 07:56:04.323  INFO 11148 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@c136841: startup date [Mon Nov 11 07:56:04 IST 2019]; root of context hierarchy
+2019-11-11 07:56:06.231  INFO 11148 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@c136841: startup date [Mon Nov 11 07:56:04 IST 2019]; root of context hierarchy
+2019-11-11 07:56:06.270  INFO 11148 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/v1/accounts/{accountId}],methods=[GET]}&quot; onto public com.db.awmd.challenge.domain.Account com.db.awmd.challenge.web.AccountsController.getAccount(java.lang.String)
+2019-11-11 07:56:06.271  INFO 11148 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/v1/accounts],methods=[POST],consumes=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.lang.Object&gt; com.db.awmd.challenge.web.AccountsController.createAccount(com.db.awmd.challenge.domain.Account)
+2019-11-11 07:56:06.273  INFO 11148 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/v1/transfer-funds],methods=[POST],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.lang.String&gt; com.db.awmd.challenge.web.FundTransferController.transferFunds(java.lang.String,java.lang.String,java.math.BigDecimal)
+2019-11-11 07:56:06.276  INFO 11148 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-11 07:56:06.277  INFO 11148 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-11 07:56:06.369  INFO 11148 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-11 07:56:06.370  INFO 11148 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-11 07:56:06.416  INFO 11148 --- [    Test worker] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in customResponseEntityExceptionHandler
+2019-11-11 07:56:06.473  INFO 11148 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-11 07:56:06.851  INFO 11148 --- [    Test worker] c.d.a.c.t.FundTransferServiceTest        : Started FundTransferServiceTest in 2.704 seconds (JVM running for 22.276)
+2019-11-11 07:56:06.867  INFO 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Transfer amount: 10 from account with id: 1234 to account with id: 2345
+2019-11-11 07:56:06.874  INFO 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Send notifications to account holders
+2019-11-11 07:56:07.199  INFO 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Transfer amount: 10 from account with id: null to account with id: null
+2019-11-11 07:56:07.200 ERROR 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Account with id null does not exit
+2019-11-11 07:56:07.212  INFO 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Transfer amount: -10 from account with id: 1234 to account with id: 2345
+2019-11-11 07:56:07.226  INFO 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Transfer amount: 10 from account with id: 1234 to account with id: 2345
+2019-11-11 07:56:07.228 ERROR 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Account with id 1234 does not exit
+2019-11-11 07:56:07.238  INFO 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Transfer amount: 10 from account with id: 1234 to account with id: 2345
+2019-11-11 07:56:07.239 ERROR 11148 --- [    Test worker] c.d.a.c.service.FundTransferService      : Insufficiant funds in account: {} hence cannot transfer specified amount : {}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.5</a> at 11-Nov-2019 07:56:07</p>
+</div>
+</div>
+</body>
+</html>
